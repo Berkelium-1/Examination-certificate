@@ -10,13 +10,10 @@
 		</uni-swiper-dot>
 
 		<view class="section1">
-			<navigator url="/pages/search/index" class="search">
-				<uni-icons type="search" size="17.5" color="#d6d6d6"></uni-icons>
-				<text>高三学生如何短时间内提分</text>
-			</navigator>
+			<uni-search-bk placeholder="高三学生如何短时间内提分"></uni-search-bk>
 			<view class="item-group">
 				<navigator url="/pages/search/index" class="item" v-for="item in 4" :key="item">
-					<image src="/static/icons/dynamic_o.png" mode="widthFix"></image>
+					<image :src="'/static/img/' + (item + 1) + '.png'" mode="widthFix"></image>
 					<text>去考证</text>
 				</navigator>
 			</view>
@@ -86,26 +83,6 @@ export default {
 		padding: 16rpx 0;
 		width: 100%;
 		background-color: #ffffff;
-		.search {
-			margin: 0 auto;
-			padding: 12rpx 6rpx;
-			width: 634rpx;
-			height: 58rpx;
-			display: flex;
-			align-items: center;
-			background-color: #ffffff;
-			font-size: 24rpx;
-			border: 1rpx solid #e6e6e6;
-			border-radius: 8rpx;
-			box-sizing: border-box;
-			box-shadow: 0 6rpx 10rpx 0 rgba($color: #000000, $alpha: 0.04);
-
-			text {
-				color: #b5b5b5;
-				margin-left: 17rpx;
-			}
-		}
-
 		.item-group {
 			margin-top: 7rpx;
 			padding: 20rpx 0;
@@ -118,11 +95,11 @@ export default {
 				align-items: center;
 
 				image {
-					width: 82rpx;
+					width: 128rpx;
 				}
 
 				text {
-					margin-top: 12.8rpx;
+					// margin-top: 12.8rpx;
 					color: #727070;
 					font-size: 20rpx;
 				}

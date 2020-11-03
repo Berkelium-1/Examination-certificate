@@ -5,14 +5,13 @@
   },
   "setting": {
     "urlCheck": false,
-    "es6": true
+    "es6": true,
+    "postcss": false
   },
   "compileType": "miniprogram",
   "libVersion": "",
   "appid": "touristappid",
   "projectname": "web",
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
   "condition": {
     "plugin": {
       "list": []
@@ -26,8 +25,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "搜索",
-          "pathName": "pages/search/index",
+          "name": "资讯",
+          "pathName": "pages/information/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "动态圈",
+          "pathName": "pages/dynamic/index",
           "query": "",
           "scene": null
         }

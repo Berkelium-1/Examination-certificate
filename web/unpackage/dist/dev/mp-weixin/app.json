@@ -10,8 +10,7 @@
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarBackgroundColor": "#FFFFFF"
   },
   "tabBar": {
     "color": "#595959",
@@ -46,5 +45,8 @@
     ]
   },
   "permission": {},
+  "uniStatistics": {
+    "enable": false
+  },
   "usingComponents": {}
 }

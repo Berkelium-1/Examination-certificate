@@ -1,0 +1,1 @@
+<navigator class="search data-v-4c306630" url="{{url}}"><icon class="icon data-v-4c306630" type="search" size="{{iconSize}}" color="{{iconColor}}"></icon><text class="data-v-4c306630">{{placeholder}}</text></navigator>

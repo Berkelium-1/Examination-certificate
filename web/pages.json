@@ -15,7 +15,7 @@
 		{
 			"path": "pages/dynamic/index",
 			"style": {
-				"navigationBarTitleText": "动态圈"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
@@ -34,8 +34,7 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#FFFFFF"
 	},
 	"tabBar": {
 	    "color": "#595959",

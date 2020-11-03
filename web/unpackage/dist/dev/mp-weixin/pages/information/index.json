@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "资讯",
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-swiper-dot": "/components/uni-swiper-dot/uni-swiper-dot",
+    "uni-search-bk": "/components/uni-search-bk/uni-search-bk"
+  }
 }

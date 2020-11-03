@@ -60,10 +60,14 @@
         "appid" : "touristappid",
         "setting" : {
             "urlCheck" : false,
-            "es6" : true
+            "es6" : true,
+            "postcss" : false
         },
         "usingComponents" : true,
-        "permission" : {}
+        "permission" : {},
+        "uniStatistics" : {
+            "enable" : false
+        }
     },
     "mp-alipay" : {
         "usingComponents" : true

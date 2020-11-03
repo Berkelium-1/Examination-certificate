@@ -1,4 +1,7 @@
 {
-  "navigationBarTitleText": "动态圈",
-  "usingComponents": {}
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "uni-fab": "/components/uni-fab/uni-fab",
+    "uni-card-bk": "/components/uni-card-bk/uni-card-bk"
+  }
 }

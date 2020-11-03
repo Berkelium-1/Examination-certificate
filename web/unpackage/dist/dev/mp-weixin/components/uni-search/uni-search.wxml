@@ -1,0 +1,1 @@
+<navigator class="search data-v-767f6ab8" url="{{url}}"><uni-icons vue-id="596cea3c-1" type="search" size="{{iconSize}}" color="{{iconColor}}" class="data-v-767f6ab8" bind:__l="__l"></uni-icons><text class="data-v-767f6ab8">{{placeholder}}</text></navigator>
