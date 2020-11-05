@@ -1728,6 +1728,52 @@ function normalizeComponent (
 
 /***/ }),
 
+/***/ 11:
+/*!*********************************************!*\
+  !*** G:/lhp study/item/web/util/request.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(uni) {var BASE_URL = 'http://120.77.254.145';
+module.exports = function (obj) {
+  // 默认请求为 get
+  var method = obj.method || 'GET';
+  // 判断是否为完整 api
+  var url = /^http(s?):\/\//.test(obj.url) ? obj.url : BASE_URL + obj.url;
+  // 判断是否有传参
+  var data = obj.data || {};
+  // 返回 Promise 对象
+  return new Promise(function (resolve, reject) {
+    uni.request({
+      method: method,
+      url: url,
+      data: data,
+      success: function success(res) {
+        if (res.statusCode === 200) {
+          resolve(res);
+        } else {
+          console.log('请求出错, 状态码: ', res.statusCode);
+          return uni.showToast({
+            title: "\u8BF7\u6C42\u51FA\u9519, \u72B6\u6001\u7801: ".concat(res.statusCode),
+            icon: 'none' });
+
+        }
+      },
+      fail: function fail(res) {
+        uni.showToast({
+          title: "\u63A5\u53E3\u8C03\u7528\u5931\u8D25",
+          icon: 'none' });
+
+        reject(res);
+      } });
+
+  });
+};
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
 /***/ 2:
 /*!******************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js ***!
@@ -7814,7 +7860,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 84:
+/***/ 85:
 /*!***********************************************************!*\
   !*** G:/lhp study/item/web/components/uni-icons/icons.js ***!
   \***********************************************************/
@@ -7953,52 +7999,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   "cloud-download-filled": "\uE8E9",
   "headphones": "\uE8BF",
   "shop": "\uE609" };exports.default = _default;
-
-/***/ }),
-
-/***/ 98:
-/*!*********************************************!*\
-  !*** G:/lhp study/item/web/util/request.js ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(uni) {var BASE_URL = 'http://120.77.254.145';
-module.exports = function (obj) {
-  // 默认请求为 get
-  var method = obj.method || 'GET';
-  // 判断是否为完整 api
-  var url = /^http(s?):\/\//.test(obj.url) ? obj.url : BASE_URL + obj.url;
-  // 判断是否有传参
-  var data = obj.data || {};
-  // 返回 Promise 对象
-  return new Promise(function (resolve, reject) {
-    uni.request({
-      method: method,
-      url: url,
-      data: data,
-      success: function success(res) {
-        if (res.statusCode === 200) {
-          resolve(res);
-        } else {
-          console.log('请求出错, 状态码: ', res.statusCode);
-          return uni.showToast({
-            title: "\u8BF7\u6C42\u51FA\u9519, \u72B6\u6001\u7801: ".concat(res.statusCode),
-            icon: 'none' });
-
-        }
-      },
-      fail: function fail(res) {
-        uni.showToast({
-          title: "\u63A5\u53E3\u8C03\u7528\u5931\u8D25",
-          icon: 'none' });
-
-        reject(res);
-      } });
-
-  });
-};
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
 

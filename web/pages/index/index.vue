@@ -21,11 +21,16 @@
 
 		<view class="section2">
 			<scroll-view class="main" scroll-x>
-				<navigator url="/pages/search/index" class="item" v-for="item in 2" :key="item"></navigator>
+				<navigator url="/pages/search/index" class="item" v-for="item in 2" :key="item">
+					<image :src="'/static/img/advert_' + (item + 1) + '.png'" mode="widthFix"></image>
+				</navigator>
 			</scroll-view>
 		</view>
 
-		<view class="section3"></view>
+		<view class="section3">
+			<image src="/static/img/airing.png" mode="heightFix"></image>
+			<roll-text :text-group="texts" speed="1000" class="text"></roll-text>
+		</view>
 
 		<view class="section4">
 			<view class="title">热门考证</view>
@@ -59,7 +64,11 @@
 </template>
 
 <script>
+import rollText from '@/components/roll-text/roll-text.vue';
 export default {
+	components: {
+		rollText
+	},
 	data() {
 		return {
 			// 轮播图数据
@@ -81,7 +90,9 @@ export default {
 				selectedBorder: 'none',
 				backgroundColor: '#E6E6E6',
 				selectedBackgroundColor: '#00DEFF'
-			}
+			},
+
+			texts: ['***先生小程序***刚刚发布 ***商城模板刚刚更新', '第二先生小程序***刚刚发布 ***商城模板刚刚更新', '***先生小程序***刚刚发布 ***商城模板刚刚更新']
 		};
 	},
 	onLoad() {},
@@ -158,6 +169,18 @@ export default {
 		width: 100%;
 		height: 40.4rpx;
 		background-color: #ffffff;
+		display: flex;
+		align-items: center;
+		image {
+			margin-left: 30rpx;
+			height: 27rpx;
+		}
+		.text {
+			height: 100%;
+			margin-left: 20rpx;
+			font-size: 18.86rpx;
+			color: #636363;
+		}
 	}
 
 	.section4 {

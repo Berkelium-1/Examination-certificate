@@ -1,0 +1,1 @@
+<view class="roll-text"><scroll-view class="scroll-view" scroll-into-view="{{view_id}}" scroll-y="{{true}}" scroll-with-animation="{{true}}"><block wx:for="{{textGroup}}" wx:for-item="v" wx:for-index="i" wx:key="*this"><view id="{{'text_'+i}}">{{v}}</view></block></scroll-view></view>

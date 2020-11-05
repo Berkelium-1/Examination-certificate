@@ -87,6 +87,22 @@
   width: 100%;
   height: 40.4rpx;
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.index .section3 image {
+  margin-left: 30rpx;
+  height: 27rpx;
+}
+.index .section3 .text {
+  height: 100%;
+  margin-left: 20rpx;
+  font-size: 18.86rpx;
+  color: #636363;
 }
 .index .section4 {
   margin: 25.6rpx auto;

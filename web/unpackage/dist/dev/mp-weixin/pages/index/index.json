@@ -2,6 +2,7 @@
   "navigationBarTitleText": "首页",
   "usingComponents": {
     "uni-swiper-dot": "/components/uni-swiper-dot/uni-swiper-dot",
-    "uni-search-bk": "/components/uni-search-bk/uni-search-bk"
+    "uni-search-bk": "/components/uni-search-bk/uni-search-bk",
+    "roll-text": "/components/roll-text/roll-text"
   }
 }
