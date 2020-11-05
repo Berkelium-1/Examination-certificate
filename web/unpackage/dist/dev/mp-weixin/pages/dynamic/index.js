@@ -94,10 +94,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   uniFab: function() {
-    return __webpack_require__.e(/*! import() | components/uni-fab/uni-fab */ "components/uni-fab/uni-fab").then(__webpack_require__.bind(null, /*! @/components/uni-fab/uni-fab.vue */ 90))
+    return __webpack_require__.e(/*! import() | components/uni-fab/uni-fab */ "components/uni-fab/uni-fab").then(__webpack_require__.bind(null, /*! @/components/uni-fab/uni-fab.vue */ 65))
   },
   uniCardBk: function() {
-    return __webpack_require__.e(/*! import() | components/uni-card-bk/uni-card-bk */ "components/uni-card-bk/uni-card-bk").then(__webpack_require__.bind(null, /*! @/components/uni-card-bk/uni-card-bk.vue */ 58))
+    return __webpack_require__.e(/*! import() | components/uni-card-bk/uni-card-bk */ "components/uni-card-bk/uni-card-bk").then(__webpack_require__.bind(null, /*! @/components/uni-card-bk/uni-card-bk.vue */ 72))
   }
 }
 var render = function() {
@@ -163,8 +163,9 @@ var _default =
     return {
       pattern: {
         color: '#FFFFFF',
-        buttonColor: '#0d91ff' } };
-
+        buttonColor: 'rgba(0, 0, 0,.5)'
+        // width:'50rpx'
+      } };
 
   },
   onLoad: function onLoad() {},

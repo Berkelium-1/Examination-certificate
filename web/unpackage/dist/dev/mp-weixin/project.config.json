@@ -12,31 +12,20 @@
   "libVersion": "",
   "appid": "touristappid",
   "projectname": "web",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
   "condition": {
-    "plugin": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
       "list": []
     },
     "game": {
       "list": []
     },
-    "gamePlugin": {
-      "list": []
-    },
     "miniprogram": {
-      "list": [
-        {
-          "name": "资讯",
-          "pathName": "pages/information/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "动态圈",
-          "pathName": "pages/dynamic/index",
-          "query": "",
-          "scene": null
-        }
-      ]
+      "list": []
     }
   }
 }

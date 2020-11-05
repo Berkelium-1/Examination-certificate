@@ -24,7 +24,8 @@ export default {
 		return {
 			pattern: {
 				color: '#FFFFFF',
-				buttonColor:'#0d91ff'
+				buttonColor:'rgba(0, 0, 0,.5)',
+				// width:'50rpx'
 			}
 		};
 	},

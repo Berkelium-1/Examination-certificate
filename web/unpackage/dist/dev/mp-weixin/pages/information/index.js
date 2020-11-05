@@ -97,7 +97,7 @@ var components = {
     return __webpack_require__.e(/*! import() | components/uni-swiper-dot/uni-swiper-dot */ "components/uni-swiper-dot/uni-swiper-dot").then(__webpack_require__.bind(null, /*! @/components/uni-swiper-dot/uni-swiper-dot.vue */ 51))
   },
   uniSearchBk: function() {
-    return __webpack_require__.e(/*! import() | components/uni-search-bk/uni-search-bk */ "components/uni-search-bk/uni-search-bk").then(__webpack_require__.bind(null, /*! @/components/uni-search-bk/uni-search-bk.vue */ 74))
+    return __webpack_require__.e(/*! import() | components/uni-search-bk/uni-search-bk */ "components/uni-search-bk/uni-search-bk").then(__webpack_require__.bind(null, /*! @/components/uni-search-bk/uni-search-bk.vue */ 58))
   }
 }
 var render = function() {

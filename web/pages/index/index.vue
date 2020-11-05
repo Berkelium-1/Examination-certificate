@@ -20,14 +20,40 @@
 		</view>
 
 		<view class="section2">
-			<scroll-view class="main" scroll-x><navigator url="/pages/search/index" class="item" v-for="item in 2" :key="item"></navigator></scroll-view>
+			<scroll-view class="main" scroll-x>
+				<navigator url="/pages/search/index" class="item" v-for="item in 2" :key="item"></navigator>
+			</scroll-view>
 		</view>
 
 		<view class="section3"></view>
 
 		<view class="section4">
 			<view class="title">热门考证</view>
-			<view class="item-group"><view class="item" v-for="item in 4" :key="item"></view></view>
+			<view class="item-group">
+				<view class="item" v-for="item in 4" :key="item">
+					<view class="item-info">
+						<view class="item-title">计算机二级</view>
+						<view class="label">
+							<text>报名时间:</text>
+							<text>2020年07月14日-08月14日24:00</text>
+						</view>
+						<view class="label">
+							<text>考试时间:</text>
+							<text>2020年08月14日 周六上午9:00</text>
+						</view>
+						<view class="label">
+							<text>证书标签:</text>
+							<view class="label-list"><view v-for="v in 4" :key="v">应用</view></view>
+						</view>
+					</view>
+					<view class="item-btn">
+						<view class="btn">
+							<view>立即</view>
+							<view>报名</view>
+						</view>
+					</view>
+				</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -83,13 +109,13 @@ export default {
 		padding: 16rpx 0;
 		width: 100%;
 		background-color: #ffffff;
-		.item-group {
+		> .item-group {
 			margin-top: 7rpx;
 			padding: 20rpx 0;
 			width: 100%;
 			display: flex;
 			justify-content: space-around;
-			.item {
+			> .item {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -137,25 +163,77 @@ export default {
 	.section4 {
 		margin: 25.6rpx auto;
 		width: 690rpx;
-		.title {
+		> .title {
 			border-left: 5rpx solid #0d91ff;
 			font-size: 28rpx;
 			color: #0d91ff;
 			padding-left: 9rpx;
 		}
 
-		.item-group {
+		> .item-group {
 			margin-top: 20rpx;
 			border-top: 2rpx solid #f0f0f0;
 			padding-top: 17.8rpx;
 			width: 100%;
-			.item {
+			> .item {
 				margin-bottom: 23rpx;
 				width: 100%;
 				height: 250rpx;
 				background-color: #ffffff;
 				border-radius: 15rpx;
 				box-shadow: 0 5rpx 10rpx 17% rgba($color: #000000, $alpha: 0.05);
+				display: flex;
+				align-items: center;
+				> .item-info {
+					margin-left: 30rpx;
+					> .item-title {
+						margin-bottom: 5rpx;
+						font-size: 32rpx;
+						font-weight: bolder;
+						color: #000000;
+					}
+					.label {
+						margin-top: 20rpx;
+						font-size: 24rpx;
+						color: #9b9ba3;
+						text {
+							margin-right: 10rpx;
+						}
+
+						> .label-list {
+							display: inline-flex;
+							view {
+								padding: 5rpx 15rpx;
+								margin-right: 15rpx;
+								color: #6adea0;
+								font-size: 22rpx;
+								border: 1rpx solid #6adea0;
+								border-radius: 6rpx;
+							}
+						}
+					}
+				}
+
+				> .item-btn {
+					margin: 0 auto;
+
+					.btn {
+						width: 94rpx;
+						height: 94rpx;
+						font-size: 24rpx;
+						border-radius: 50%;
+						color: #ffffff;
+						background-color: #fa974c;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+
+						&:active {
+							opacity: 0.6;
+						}
+					}
+				}
 			}
 		}
 	}
